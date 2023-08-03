@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.tours-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px;
+    gap: 50px;
+}
+
+.tour-card{
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);;
+    overflow: hidden;
+    position: relative;
+}
+
+.tour-card-detail p, .tour-card .tour-card-detail .card-header{
+    padding: 0px 10px;
+}
+
+.tour-card-detail p{
+    font-size: small;
+}
+
+.tour-card .tour-card-detail img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.tour-card .tour-card-detail .card-header{
+    font-size: 20px;
+    text-align: center;
+}
+
+.tour-card-detail h5{
+    background-color: rgb(9, 250, 170);
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.tour-card button{
+}
+
+.tour-card-detail p span{
+    font-size: 10px;
+    color: green;
+    padding: 1px;
+    text-align: center;
+    cursor: pointer;
 }
